@@ -1,0 +1,84 @@
+:root{
+  window-height: 100vh;
+  window-width: 70vw;
+  title-bar-height: 30px;
+  compressed-window-height: 360px;
+  compressed-window-width: 250px;  
+}
+/* $window-height: 100vh;
+$window-width: 70vw;
+$title-bar-height: 30px; */
+
+.video-chat-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* max-width: $window-width; */
+  max-height: var(--window-height);
+  background: rgb(0, 0, 0, 1);
+  border-top-right-radius: 0.4em;
+  border-top-left-radius: 0.4em;
+  z-index: 1;
+  overflow: hidden;
+}
+.video-chat-window.title-bar {
+  height: var(--title-bar-height);
+  max-height: var(--title-bar-height);
+  background: #0c0c0c;
+}
+.video-chat-window.title-bar.svg {
+  height: var(--title-bar-height);
+  padding: 7px;
+}
+
+.video-chat-window.title-bar.svg:hover {
+  cursor: pointer;
+}
+.video-chat-window.video-chat-containervideo {
+  background: #000;
+}
+.video-chat-window.video-chat-container.os-content-glue {
+  max-height: calc(var(--window-height) - var(--title-bar-height));
+}
+.video-chat-window.video-chat-container.focus-stream-row {
+  max-height: 50vh;
+}
+.video-chat-window.video-chat-container.focus-stream-row.focus-stream {
+  max-height: 50vh;
+}
+.video-chat-window.video-chat-container.peer-stream {
+  max-height: 18vh;
+  width: auto !important;
+}
+
+
+
+
+/* .video-chat-window.compressed {
+  max-height: var(--compressed-window-height);
+  max-width: var(--compressed-window-width);
+  left: 100%;
+  top: 100%;
+  transform: translate(-110%, calc(-100% - $control-bar-height));
+
+  .video-chat-container {
+    .os-host,
+    .os-content-glue {
+      max-height: calc(var(--compressed-window-height) - var(--title-bar-height));
+      max-width: var(--compressed-window-width);
+    }
+  }
+}
+
+.video-chat-window.compressed.minimized {
+  transform: translate(-110%, calc(-100% - $control-bar-height));
+
+  .video-chat-container {
+    .os-host,
+    .os-content-glue {
+      max-height: 0px;
+      height: 0px !important;
+    }
+  }
+} */

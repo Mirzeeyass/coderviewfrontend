@@ -1,0 +1,20 @@
+.btn:focus {
+  box-shadow: none !important;
+}
+body {
+  background-color: #bcf7ff;
+}
+.placeholder-container {
+  width: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  text-align: center;
+  color: white !important;
+}
+#placeholder-img {
+  width: 100%;
+  padding: 2px;
+}

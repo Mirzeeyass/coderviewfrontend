@@ -1,0 +1,33 @@
+.wrapper {
+  color: #110101;
+  min-height: 100%;
+
+  .welcome-card{
+    background: #bcf7ff;
+    width: 70%;
+    border: none;
+  }
+ .End-card{
+   background-color:##bcf7ff ;
+   text-emphasis-color: White;
+
+ }
+  .demo-image {
+    width: 1000px;
+    box-shadow: 5px 6px 5px #05e0fd;  
+    margin-bottom: 50px;
+  }
+
+  .btn {
+    width: 300px;
+  }
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
